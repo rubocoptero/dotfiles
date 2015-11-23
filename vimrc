@@ -40,7 +40,7 @@ Plugin 'VundleVim/Vundle.vim'
 " ### Indispensable
 
 " ctrlp is file fuzzy search
-"Plugin 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 " Ack.vim uses ack to search within files
 "Plugin 'mileszs/ack.vim'
 "Airline provides a stylish appearance for the styleline
@@ -250,10 +250,10 @@ map <leader>rr :source ~/.vimrc<CR>
 
 " CTRL+P options
 
-"let g:ctrlp_custom_ignore = {
-"    \ 'file': '\.pyc$',
-"    \ 'dir': 'node_modules\|\.DS_Store$\|\.git$'
-"    \ }
+let g:ctrlp_custom_ignore = {
+    \ 'file': '\.pyc$',
+    \ 'dir': 'node_modules\|\.DS_Store$\|\.git$'
+    \ }
 " Airline options
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
