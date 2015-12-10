@@ -57,7 +57,7 @@ Plugin 'airblade/vim-gitgutter'
 " ### Use sometimes
 
 " Nerdtree provides a file explorer, which is sometimes useful. Mostly ctrlp handles file finding though
-"Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 " fugitive provides git bindings in Vim.  Don't use too much, but useful for blame
 "Plugin 'tpope/vim-fugitive'
 " Surround is useful for adding surrounding tags to elements (especially html)
@@ -263,7 +263,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
- 
+
 " Plugin Options
 " ==============
 
@@ -281,8 +281,8 @@ let g:airline_powerline_fonts = 1
 "let g:vim_markdown_folding_disabled=1
 
 "NerdTree Options
-"map <C-n> :NERDTreeToggle<CR>
-"let NERDTreeHijackNetrw=1 "Put Nerdtree into a window
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeHijackNetrw=1 "Put Nerdtree into a window
 
 "YouCompleteMe options
 "let g:ycm_min_num_of_chars_for_completion=3
