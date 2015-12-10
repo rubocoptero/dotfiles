@@ -82,10 +82,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# z tool
-. `brew --prefix`/etc/profile.d/z.sh
-
+#
 # ANDROID_HOME
 export ANDROID_HOME=$HOME/Applications/android-sdk-macosx
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
