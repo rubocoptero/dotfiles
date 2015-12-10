@@ -147,7 +147,7 @@ endif
 let mapleader='\'               " I just use the default Leader
 set encoding=utf-8
 set number                      " Line numbers are nice
-set relativenumber
+" set relativenumber
 set backspace=indent,eol,start  " Allow backspace in insert mode
 set history=1000                " Store lots of :cmdline history
 set showcmd                     " Show incomplete cmds down the bottom
@@ -245,6 +245,25 @@ map K i<Enter><Esc>
 "\rr => refresh vimrc
 map <leader>rr :source ~/.vimrc<CR>
 
+" Switch between the last two files
+nnoremap <leader><leader> <c-^>
+
+" Get off my lawn
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
+
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+ 
 " Plugin Options
 " ==============
 
