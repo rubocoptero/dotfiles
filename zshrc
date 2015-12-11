@@ -83,9 +83,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-# ANDROID_HOME
+
+########## ANDROID_HOME
+
 export ANDROID_HOME=$HOME/Applications/android-sdk-macosx
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
-# JAVA_HOME
+########## JAVA_HOME
+
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+########## rbenv
+
+eval "$(rbenv init -)"
