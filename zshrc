@@ -62,6 +62,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
+export EDITOR='vim'
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
@@ -82,6 +83,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias be="bundle exec"
+alias ber="bundle exec rspec"
+alias b="babushka"
+alias flywire="cd ~/Code/pT/code/platform"
+alias vs="vagrant up; vagrant ssh"
 #
 
 ########## ANDROID_HOME
@@ -96,3 +102,10 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 ########## rbenv
 
 eval "$(rbenv init -)"
+
+# Avoid git status slowness
+# https://gist.github.com/msabramo/2355834
+function git_prompt_info() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}${ZSH_THEME_GIT_PROMPT_CLEAN}${ZSH_THEME_GIT_PROMPT_SUFFIX}"
+}
