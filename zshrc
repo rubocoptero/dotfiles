@@ -99,9 +99,8 @@ export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-########## rbenv
-
-eval "$(rbenv init -)"
+########## Initialize rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Avoid git status slowness
 # https://gist.github.com/msabramo/2355834
