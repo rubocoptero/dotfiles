@@ -98,7 +98,9 @@ export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 ########## JAVA_HOME
 
-export JAVA_HOME=$(/usr/libexec/java_home)
+if [ -f /usr/libexec/java_home ]; then
+  export JAVA_HOME=$(/usr/libexec/java_home)
+fi
 
 ########## Initialize rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
