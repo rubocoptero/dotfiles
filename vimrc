@@ -276,6 +276,13 @@ nnoremap k gk
 " jk is escape
 inoremap jk <esc>
 
+" Edit another file in the same directory as the current file
+" " uses expression to extract path from current file's path
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>e :e %%
+map <leader>sp :sp %%
+map <leader>vsp :vsp %%
+
 
 " Plugin Options
 " ==============
