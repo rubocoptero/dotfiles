@@ -147,7 +147,7 @@ endif
 let mapleader='\'               " I just use the default Leader
 set encoding=utf-8
 set number                      " Line numbers are nice
-" set relativenumber
+set cursorline
 set backspace=indent,eol,start  " Allow backspace in insert mode
 set history=1000                " Store lots of :cmdline history
 set showcmd                     " Show incomplete cmds down the bottom
@@ -158,6 +158,8 @@ set hidden                      " Buffers can exist in the background
 set splitright                  " Opens vertical split right of current window
 set splitbelow                  " Opens horizontal split below current window
 set shortmess=filnxtToOI        " see :help shortmess
+set showmatch
+set lazyredraw
 
 " Mouse
 " ======
@@ -242,8 +244,8 @@ set sidescroll=1
 
 "Let K be the opposite of J
 map K i<Enter><Esc>
-"\rr => refresh vimrc
-map <leader>rr :source ~/.vimrc<CR>
+"\sv=> refresh vimrc
+nnoremap <leader>sv :source ~/.vimrc<CR>
 
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
@@ -263,6 +265,17 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+" turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
+
+" jk is escape
+inoremap jk <esc>
+
 
 " Plugin Options
 " ==============
