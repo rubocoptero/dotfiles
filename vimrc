@@ -38,7 +38,9 @@ Plugin 'VundleVim/Vundle.vim'
 " Functionality
 
 " ### Indispensable
-
+" Ruby ones
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-endwise'
 " ctrlp is file fuzzy search
 Plugin 'kien/ctrlp.vim'
 " Ack.vim uses ack to search within files
