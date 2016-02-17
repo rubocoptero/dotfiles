@@ -163,6 +163,9 @@ set shortmess=filnxtToOI        " see :help shortmess
 set showmatch
 set lazyredraw
 
+" Reduce escape delay in vim
+set timeoutlen=1000 ttimeoutlen=0
+
 " Mouse
 " ======
 
