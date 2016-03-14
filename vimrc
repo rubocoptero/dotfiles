@@ -207,7 +207,7 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 " Indentation and Display
 " =======================
 
-" We want to replace tabs with spaces and have 4 space width indentation
+" We want to replace tabs with spaces and have 2 space width indentation
 set autoindent
 set smartindent
 set smarttab
@@ -311,3 +311,9 @@ let NERDTreeHijackNetrw=1 "Put Nerdtree into a window
 
 "YouCompleteMe options
 "let g:ycm_min_num_of_chars_for_completion=3
+
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
