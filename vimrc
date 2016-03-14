@@ -217,7 +217,7 @@ set tabstop=2
 set expandtab
 
 set list listchars=tab:\ \ ,trail:·   " Display tabs and trailing spaces visually
-set nowrap                            " Don't wrap lines
+" set nowrap                            " Don't wrap lines
 
 " Folds
 " =====
@@ -260,10 +260,6 @@ nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
-
-" Open new split panes to right and bottom, which feels more natural
-set splitbelow
-set splitright
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
