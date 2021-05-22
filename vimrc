@@ -56,6 +56,9 @@ Plugin 'airblade/vim-gitgutter'
 "Provides Sublime-Text like smart completion of braces, parens and such
 "Plugin 'Raimondi/delimitMate'
 
+" Language packs for syntax highlight
+Plugin 'sheerun/vim-polyglot'
+
 " ### Use sometimes
 
 " Nerdtree provides a file explorer, which is sometimes useful. Mostly ctrlp handles file finding though
