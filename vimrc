@@ -9,7 +9,7 @@ set nocompatible
 " Set shell to zsh (fish and VIM don't play well together)
 set shell=zsh
 "Don't dump distracting text to terminal during searchesr
-ret shellpipe=2>/dev/null>
+set shellpipe=2>/dev/null>
 
 " Plugins here
 " =============

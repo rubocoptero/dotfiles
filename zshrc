@@ -83,11 +83,7 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias be="bundle exec"
-alias ber="bundle exec rspec"
-alias b="babushka"
-alias flywire="cd ~/Code/pT/code/platform"
-alias vs="vagrant up; vagrant ssh"
+alias ls='lsd'
 #
 
 ########## ANDROID_HOME
@@ -120,3 +116,4 @@ export PATH=$PATH:/usr/local/mysql/bin
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/rubocoptero/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
