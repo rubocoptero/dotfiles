@@ -17,6 +17,7 @@ brew install --cask \
     macdown \
     microsoft-teams \
     notion \
+    postman \
     protonvpn \
     rectangle \
     roam-research \
