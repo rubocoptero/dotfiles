@@ -1,3 +1,3 @@
 ```bash
-git clone --recursive git@github.com:rubocoptero/dotfiles.git
+git clone --recursive https://github.com/rubocoptero/dotfiles.git
 ```
